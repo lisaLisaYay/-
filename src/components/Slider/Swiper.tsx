@@ -6,6 +6,7 @@ import { gsap } from "gsap";
 import { YearInfo, YearTitle } from "./Slider.styles";
 import "./swipe.css";
 import arrowImg from "../../assets/images/swiperArrow.svg"
+import arrowImgLeft from "../../assets/images/swiperArrowLeft.svg"
 
 import { Stamp } from "../../types/data.types";
 
@@ -86,7 +87,7 @@ function DateSwiper({ slides }: SwiperProps) {
           );
         })}
       </Swiper>
-      <div className="custom-swiper-button-prev"><img src={arrowImg} alt="previous" style={{ transform: 'scaleX(-1)' }} /></div>
+      <div className="custom-swiper-button-prev"><img src={arrowImgLeft} alt="previous" /></div>
       <div className="custom-swiper-button-next"><img src={arrowImg} alt="next" /></div>
     </div>
   );

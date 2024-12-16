@@ -1,6 +1,8 @@
 import DateSwiper from "./Swiper"; 
 import { MainContainer, ButtonContainer, Button, Navigation, Dot, DotWrap } from "./Slider.styles";
 import btnIcon from "../../assets/images/arrow.svg"
+import btnIconRight from "../../assets/images/arrowRight.svg"
+
 
 import { TimeStamp } from "../../types/data.types";
 
@@ -41,7 +43,7 @@ const Slider = ({
         <img src={btnIcon} alt="Previous" />
         </Button>
         <Button onClick={handleNext} disabled={currentIndex === listLength} className="next-btn">
-          <img src={btnIcon} alt="Next" />
+          <img src={btnIconRight} alt="Next" />
         </Button>
       </ButtonContainer>
 

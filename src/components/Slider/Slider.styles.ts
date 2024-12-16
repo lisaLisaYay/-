@@ -56,7 +56,6 @@ export const Button = styled.button`
   }
 
   &.next-btn img {
-    transform: rotate(180deg);
     margin-left: 0;
     margin-right: -2px;
   }
